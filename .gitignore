@@ -16,3 +16,6 @@ htmlcov/
 .pydevproject
 .vscode/
 .DS_Store
+
+/env
+/venv

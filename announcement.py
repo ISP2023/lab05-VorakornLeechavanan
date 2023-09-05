@@ -7,6 +7,14 @@
    Use python-decouple to get the values from .env.
 """
 from typing import List
+from decouple import config
+
+# .env
+IS_ONLINE = config("IS_ONLINE")
+MEETING_URL = config("MEETING_URL")
+LOCATION = config("LOCATION")
+MEETING_TIME = config("MEETING_TIME")
+TOPICS = config("TOPICS")
 
 
 def announce_class(is_online: bool):
@@ -30,6 +38,6 @@ def describe_topics(topics: List[str]):
 
 if __name__ == '__main__':
     # Does class meet online (True) or at KU (False)?
-    announce_class(False)
+    announce_class(IS_ONLINE)
     # print a list of today's topics
-    describe_topics(["Unit testing", "Externalize data", "Automate Tests"])
+    describe_topics(TOPICS)

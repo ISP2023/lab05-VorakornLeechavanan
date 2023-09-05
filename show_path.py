@@ -22,6 +22,7 @@
 """
 import os
 
+
 def show_path():
     """Print all directories on a user's PATH, one per line.
 
@@ -29,7 +30,12 @@ def show_path():
     print a warning on the same line, such as "(Not a Directory)".  
     Hint: os.path.isdir(pathname)
     """
-    pass
+    path = os.getenv("PATH")
+    path_lst = str.split(path, sep=":")
+    print("Your PATH contains")
+    for item in path_lst:
+        print(item)
+
 
 if __name__ == "__main__":
     show_path()
