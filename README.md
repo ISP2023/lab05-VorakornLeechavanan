@@ -1,3 +1,5 @@
+[![Unit tests](https://github.com/ISP2023/lab05-VorakornLeechavanan/actions/workflows/python-app.yml/badge.svg)](https://github.com/ISP2023/lab05-VorakornLeechavanan/actions/workflows/python-app.yml)
+
 ## Lab 05
 
 1. Modify `show_path.py` to read the PATH environment variable and prints its constituents, one per line.
